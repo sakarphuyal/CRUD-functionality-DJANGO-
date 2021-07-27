@@ -1,0 +1,12 @@
+
+{% for employee in employees %}
+
+<h3>{{employee}} <a href='{{ "http://127.0.0.1:5000/data/" + employee.employee_id|string + "/update" }}'>Update</a>
+                 <a href='{{ "http://127.0.0.1:5000/data/" + employee.employee_id|string + "/delete" }}'>Delete</a>
+                 <a href='{{ "http://127.0.0.1:5000/data/" + employee.employee_id|string }}'>Detail</a>
+    <hr>
+{% endfor %}
+
+
+<a href='{{ "http://127.0.0.1:5000/"}}'>........................Go to home.......................</a>
+
